@@ -1,0 +1,310 @@
+.main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: #3aafa9;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2b7a78;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px rgba(57, 57, 57, 0.684);
+}
+.billBox {
+  margin-top: 1rem;
+  height: 740px;
+  background-image: url("https://res.cloudinary.com/dagkvnqd9/image/upload/v1726917662/WhatsApp_Image_2024-09-13_at_9.33.52_PM-removebg_oalbnc.png");
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #def2f1;
+  width: 75%;
+  border-radius: 15px;
+  padding: 1.5rem 0 0 3rem;
+  background-blend-mode: overlay;
+  transition: all 0.2s linear;
+}
+.top {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear;
+}
+.billInvoice {
+  color: #2b7a78;
+  font-size: 2.7rem;
+}
+.date {
+  font-size: 1.15rem;
+}
+.hLine {
+  width: 95%;
+  margin: 2rem 0;
+  border: 1px solid black;
+}
+.middle {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 1rem;
+  transition: all 0.2s linear;
+}
+.billFrom,
+.billTo {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.fromDetailsB,
+.toDetailsB {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2b7a78;
+  transition: all 0.2s linear;
+}
+.fromDetails,
+.toDetails {
+  font-size: 1rem;
+  transition: all 0.2s linear;
+}
+.bottom {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear;
+}
+.headerBox,
+.dataBox {
+  height: auto;
+  width: 98%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 0.5rem 0;
+}
+.header {
+  font-size: 1.4rem;
+  color: #2b7a78;
+  font-weight: 600;
+  text-align: center;
+}
+.data {
+  font-size: 1.1rem;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+.subTotalText {
+  font-size: 1.2rem;
+  transition: all 0.2s linear;
+}
+.subTotal {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 2rem;
+  transition: all 0.2s linear;
+}
+.one {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  gap: 1rem;
+}
+.totalSection {
+  width: 100%;
+  max-width: 400px;
+}
+.line {
+  width: 100%;
+  border: 1px solid #2b7a78;
+  margin: 0.5rem 0;
+}
+.subTotalAmountF {
+  font-weight: 600;
+  color: #2b7a78;
+  transition: all 0.2s linear;
+}
+.buttons {
+  height: auto;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1rem 2rem 1.5rem 0;
+  transition: all 0.2s linear;
+}
+.shareBtn,
+.printBtn,
+.editBtn,
+.discardBtn {
+  height: 40px;
+  width: 90px;
+  border-radius: 15px;
+  background-color: #def2f1;
+  color: black;
+  transition: all 0.2s linear;
+}
+.shareBtn:hover,
+.printBtn:hover,
+.discardBtn:hover,
+.editBtn:hover {
+  background-color: #4c5b5f;
+  color: #def2f1;
+}
+.editableInput {
+  width: 80%;
+  padding: 5px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+@media screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .billBox {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .billInvoice {
+    font-size: 2rem;
+  }
+  .date {
+    font-size: 0.975rem;
+  }
+  .fromDetails,
+  .toDetailsB {
+    font-size: 1.1rem;
+  }
+  .fromDetails,
+  .toDetails {
+    font-size: 0.9rem;
+  }
+  .header {
+    font-size: 1rem;
+  }
+  .data {
+    font-size: 0.9rem;
+  }
+  .subTotalText {
+    font-size: 0.95rem;
+  }
+  .subTotalAmountF {
+    font-size: 0.9rem;
+  }
+  .subTotalAmount {
+    font-size: 0.9rem;
+  }
+  .billBox {
+    padding-left: 35px;
+    background-blend-mode: soft-light;
+  }
+}
+@media screen and (max-width: 450px) {
+  .billBox {
+    padding-left: 10px;
+    height: 760px;
+  }
+  .middle {
+    flex-direction: column;
+    padding-left: 2rem;
+    gap: 1rem;
+  }
+  .top {
+    padding-left: 2rem;
+  }
+  .subTotal {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+  .buttons {
+    width: 95%;
+  }
+  .editBtn,
+  .printBtn,
+  .shareBtn,
+  .discardBtn {
+    height: 35px;
+    width: 70px;
+    font-size: 0.9rem;
+  }
+  .data,
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .editableInput {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .header {
+    font-size: 0.87rem;
+  }
+  .data {
+    font-size: 0.85rem;
+  }
+  .subTotalText,
+  .subTotalAmount,
+  .subTotalAmountF {
+    font-size: 0.8rem;
+  }
+  .buttons {
+    width: 90%;
+    margin: 1rem 0 1.5rem 0;
+  }
+  .editBtn,
+  .printBtn,
+  .shareBtn,
+  .discardBtn {
+    height: 32px;
+    width: 60px;
+    font-size: 0.8rem;
+  }
+  .middle,
+  .top {
+    padding-left: 1.4rem;
+  }
+  .billBox {
+    height: 780px;
+  }
+}
+@media print {
+  .buttons {
+    display: none;
+  }
+  .billBox {
+    height: 100dvh;
+    width: 95%;
+    padding-top: 5rem;
+  }
+}

@@ -1,0 +1,70 @@
+.main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: #3aafa9;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2b7a78;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px rgba(57, 57, 57, 0.684);
+}
+.paymentCategory {
+  margin: 10px 0;
+}
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+.paymentCategoryTitle {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+.paymentList {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.paymentItem {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.containerName {
+  width: 77%;
+  height: 77%;
+}
+.container h3{
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 900px){
+  .container{
+    margin-left: 0;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .containerName{
+    height: 100dvh;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .cash{
+    height: 250px;
+    width: 350px;
+  }
+}

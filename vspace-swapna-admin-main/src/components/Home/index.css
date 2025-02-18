@@ -1,0 +1,14 @@
+.home-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.overview-container::-webkit-scrollbar {
+  width: 6px;
+}
+@media only screen and (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    background-color: #3AAFA9;
+  }
+}

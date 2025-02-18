@@ -1,0 +1,69 @@
+/* Container for the filter icon and form */
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  /* Styling for the filter form */
+  .filter-form {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Space between the form and the icon */
+    /* Added styles to ensure visibility */
+    opacity: 1; /* Make sure it's visible */
+    transform: translateX(0); /* Ensure it starts from its final position */
+  }
+  
+  /* Additional styles for the dropdown menu */
+  .date-range-dropdown {
+    margin-right: 10px; /* Space between dropdown and filter form */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem; /* Match font size with labels */
+    padding-left: 15px;
+  }
+  
+  /* Styling for the filter icon */
+  .filter-icon {
+    cursor: pointer;
+    width: 45px; /* Set a specific width */
+    height: 45px; /* Set height equal to the width for a perfect circle */
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 50%; /* Perfectly round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  
+  /* Change background color when active (toggled) */
+  .filter-icon.active {
+    background-color: #2b7a78; /* Change to any color you want */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Inputs inside the filter */
+  .filter-form label {
+    margin-right: 5px; /* Space between label and input */
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .filter-form input[type="date"] {
+    margin-right: 10px; /* Space between inputs */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 15px;
+  }
+
+  .date-range-dropdown{
+    height: 40px;
+    width: 153px;
+  }

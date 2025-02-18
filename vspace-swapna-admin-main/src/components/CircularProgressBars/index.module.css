@@ -1,0 +1,33 @@
+.progressbarsContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.circularProgressbarContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.circularProgressbarItem{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.CircularProgressbar{
+  width: 50%;
+}
+.circularProgressbarItem p{
+  font-size: 1.1rem;
+  color: black;
+}
+
+@media only screen and (max-width: 900px){
+  .circularProgressbarItem{
+    height: 150px;
+  }
+}

@@ -1,0 +1,49 @@
+.main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: #3AAFA9;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.allCarsName {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2b7a78;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px rgba(57, 57, 57, 0.684);
+}
+.allCars {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.2rem;
+  padding-left: 4rem;
+}
+@media screen and (max-width: 900px){
+  .main{
+    flex-direction: column;
+  }
+  .container{
+    margin-left: 0;
+  }
+  .allCars{
+    height: 100%;
+    padding-left: 0;
+    justify-content: center;
+  }
+}

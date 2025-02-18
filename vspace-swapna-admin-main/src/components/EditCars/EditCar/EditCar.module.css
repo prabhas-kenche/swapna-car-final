@@ -1,0 +1,269 @@
+.main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: #3aafa9;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2b7a78;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px rgba(57, 57, 57, 0.684);
+}
+.carList {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.1rem;
+  margin: 1rem 0 0 3rem;
+}
+.carCard {
+  height: auto;
+  max-width: 420px;
+  width: 95%;
+  background-color: #def2f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.carImg {
+  margin-top: 1.2rem;
+  height: 240px;
+  width: 88%;
+  border-radius: 20px;
+}
+.carName {
+  font-size: 2rem;
+  color: #333333;
+}
+.carFeatures {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.carPassengers,
+.carModel,
+.carBags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.carDesc {
+  font-size: 1rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92%;
+  padding-left: 0.7rem;
+  padding-top: 1rem;
+}
+.button {
+  height: 40px;
+  width: 120px;
+  border-radius: 15px;
+  background-color: #2b7a78;
+  color: white;
+}
+.pricesBox {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.prices {
+  font-size: 1rem;
+  color: #333333;
+}
+.editButtonBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.editBtn {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+.editBtn:hover,
+.actionBtn:hover,
+.removeBtn:hover {
+  background-color: #333;
+}
+.actionButtonBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-left: 1rem;
+}
+.removeBtn {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  background-color: #cd0909d7;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+.actionBtn {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  background-color: #d85e00;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+.modalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: scroll;
+}
+.modal {
+  background-color: #e2f1f0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #e2f1f0;
+}
+.modal textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.modalActions button {
+  height: 40px;
+  width: 45%;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.modalActions .cancelButton {
+  background-color: #f44336;
+  color: white;
+}
+.modalActions .saveButton {
+  background-color: #4caf50;
+  color: white;
+}
+.modalActions button:hover {
+  background-color: #333;
+}
+.main.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+.imagePreview {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.uploadLabel {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.imageInput {
+  display: none;
+}
+.amountRangeHoursBox {
+  display: flex;
+  flex-direction: column;
+}
+.amountRangeHours {
+  width: 100%;
+  display: flex;
+  gap: 0.4rem;
+}
+@media screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .carList {
+    margin: 0;
+  }
+  .carImg {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .carFeatures {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}

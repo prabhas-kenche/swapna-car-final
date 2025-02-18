@@ -1,0 +1,239 @@
+.main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: #3aafa9;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2b7a78;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px rgba(57, 57, 57, 0.684);
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 590px;
+  width: 90%;
+  margin-left: 1rem;
+  padding: 20px;
+  border: 2px solid #2b7a78;
+  border-radius: 8px;
+  background-color: #E2F1F0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.btnBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.selectAllButton {
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #2b7a78;
+  transition: background-color 0.3s;
+}
+.iconBox {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffef;
+}
+.icon {
+  font-size: 2.7rem;
+  color: #0e3533;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.card {
+  background-color: #3aafa9;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 170px;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #2b7a78;
+}
+.checkbox {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.label {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  display: block;
+  cursor: pointer;
+}
+.submitButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #2b7a78;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submitButton:hover,
+.selectAllButton:hover {
+  background-color: #205c59;
+}
+.inputGroup {
+  margin-bottom: 15px;
+}
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border: 2px solid #2b7a78;
+  border-radius: 4px;
+  background-color: #E2F1F0;
+}
+.selectedRoles {
+  padding-left: 0;
+}
+.selectedRoles li {
+  font-size: 1rem;
+}
+.submitButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2b7a78;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submitButton:hover {
+  background-color: #205c59;
+}
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 200px;
+}
+.step {
+  font-size: 1.2rem;
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step.active {
+  background-color: #2b7a78;
+  color: white;
+}
+.step.completed {
+  background-color: rgba(22, 151, 22, 0.936);
+  color: white;
+}
+.hLine {
+  width: 110px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.inputGroup {
+  margin-bottom: 15px;
+}
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border: 2px solid #2b7a78;
+  border-radius: 4px;
+}
+.selectedRoles {
+  padding-left: 2rem;
+}
+.selectedRoles li {
+  font-size: 1rem;
+}
+.btns {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submitButton,
+.backButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2b7a78;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submitButton:hover,
+.backButton:hover {
+  background-color: #205c59;
+}
+@media screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+  .container {
+    margin-left: 0;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 450px){
+  .heading{
+    width: 95%;
+  }
+}
