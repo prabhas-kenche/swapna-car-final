@@ -37,7 +37,7 @@ db.run(`
         carTitle TEXT,
         carImage TEXT,
         userId TEXT,
-        price TEXT
+        price INTEGER
     )
 `);
 

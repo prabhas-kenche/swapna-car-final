@@ -62,6 +62,7 @@ const NewOrders = () => {
                   <p><strong>Drop Time: </strong> {order.dropTime}</p>
                   <p><strong>Total Duration: </strong> {order.totalDays} days</p>
                   <p><strong>Visiting Places: </strong> {order.visitingPlaces}</p>
+                  <p><strong>Price: </strong> {order.price}</p>
                 </div>
               </div>
             ))}
